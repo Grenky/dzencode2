@@ -1,0 +1,64 @@
+.wrapper-topmenu {
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 50px;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: relative;
+}
+.wrapper-topmenu .topmenu__input-logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.wrapper-topmenu .topmenu__input-logo .topmenu__input-box {
+  position: relative;
+}
+.wrapper-topmenu .topmenu__input-logo .topmenu__input-box .topmenu_input {
+  border-radius: 5px;
+  width: 300px;
+  border: solid 1px black;
+  padding: 5px;
+  background-color: #F0F3F5;
+}
+.wrapper-topmenu .topmenu__input-logo .topmenu__input-box .topmenu_input::-moz-placeholder {
+  color: black;
+  font-weight: bold;
+}
+.wrapper-topmenu .topmenu__input-logo .topmenu__input-box .topmenu_input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+.wrapper-topmenu .topmenu__input-logo .topmenu__input-box .input-error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.wrapper-topmenu .topmenu__input-logo .topmenu__input-box .input-invalid {
+  border: 1px solid red;
+}
+.wrapper-topmenu .topmenu__input-logo a {
+  text-decoration: none;
+}
+.wrapper-topmenu .topmenu__input-logo a .logo {
+  color: #A7CC82;
+}
+.wrapper-topmenu .dataSession-box {
+  display: flex;
+}
+.wrapper-topmenu .dataSession-box .sessionCount {
+  margin-right: 20px;
+}
+.wrapper-topmenu .dataSession-box .data {
+  display: flex;
+  align-items: center;
+}
+.wrapper-topmenu .dataSession-box .data .clock-icon {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}/*# sourceMappingURL=styles.css.map */
