@@ -1,0 +1,73 @@
+.wrapper-topmenu {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    position: relative;
+
+    .topmenu__input-logo {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .topmenu__input-box {
+          position: relative; 
+          
+           .topmenu_input {
+            border-radius: 5px;
+            width: 300px;
+            border: solid 1px black;
+            padding:  5px;
+            background-color: #F0F3F5;
+
+            &::placeholder {
+                color: black;
+                font-weight: bold;
+            }
+        }
+            .input-error {
+                color: red;
+                font-size: 12px;
+                margin-top: 4px;
+            }
+            .input-invalid {
+                border: 1px solid red;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            
+            .logo {
+                color: #A7CC82;
+                
+            }
+        }
+       
+    }
+
+    .dataSession-box {
+        display: flex;
+
+        .sessionCount {
+            margin-right: 20px;
+        }
+
+        .data {
+            display: flex;
+            align-items: center;
+            
+            .clock-icon {
+                width: 15px;
+                height: 15px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+}

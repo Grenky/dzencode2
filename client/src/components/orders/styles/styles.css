@@ -1,0 +1,61 @@
+.orders-wrapper .orders_selection-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.orders-wrapper .orders_selection-box .orders_selection-type, .orders-wrapper .orders_selection-box .orders_selection-specification {
+  display: flex;
+  align-items: center;
+}
+.orders-wrapper .orders_selection-box .orders_selection-type p, .orders-wrapper .orders_selection-box .orders_selection-specification p {
+  color: #A6B6BE;
+  margin: 0px 15px 0px 25px;
+}
+.orders-wrapper .orders_selection-box .type, .orders-wrapper .orders_selection-box .specification {
+  border: 1px solid #DEE4E7;
+  width: 200px;
+}
+.orders-wrapper .order-block {
+  background-color: white;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.orders-wrapper .order-block:hover {
+  cursor: pointer;
+  background-color: #fdf8f8;
+  box-shadow: none;
+}
+.orders-wrapper .order-block .order-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.orders-wrapper .order-block .order-details p {
+  color: #738892;
+}
+.orders-wrapper .order-block .order-details .delete-btn {
+  width: 25px;
+}
+.orders-wrapper .order-block .order-details .order-details__close {
+  position: absolute;
+  top: -95px;
+  right: -25px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #A6B6BE;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 4px 0 6px -2px rgba(0, 0, 0, 0.2);
+}
+.orders-wrapper .order-block .order-details .order-details__close:hover {
+  color: #000;
+}/*# sourceMappingURL=styles.css.map */

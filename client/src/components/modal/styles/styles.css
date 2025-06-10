@@ -1,0 +1,81 @@
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-overlay .popup-content {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 2.5rem 0 0;
+  width: 90%;
+  max-width: 480px;
+  max-height: 90vh;
+  position: relative;
+}
+.popup-overlay .popup-content .popup-close {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 22px;
+}
+.popup-overlay .popup-content p {
+  margin-left: 50px;
+}
+.popup-overlay .popup-content strong {
+  margin-left: 50px;
+}
+.popup-overlay .popup-content .popup-buttons {
+  background-color: #88C049;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0px 0px 4px 4px;
+  margin-top: 15px;
+}
+.popup-overlay .popup-content .popup-buttons .cancel-btn {
+  color: #F3F8EC;
+  background-color: #88C049;
+  border: none;
+  font-weight: bold;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.popup-overlay .popup-content .popup-buttons .delete-btn {
+  height: 38px;
+  border-radius: 19px;
+  border: none;
+  color: #BB3043;
+  font-weight: bold;
+  display: flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 0px;
+  cursor: pointer;
+}
+.popup-overlay .popup-content .popup-buttons .delete-btn img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+.popup-overlay .popup-content .popup-buttons .delete-btn:hover {
+  box-shadow: none;
+}/*# sourceMappingURL=styles.css.map */
