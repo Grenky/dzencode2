@@ -12,25 +12,27 @@ const io = new Server(server, {
 });
 
 
+const path = require('path');
+
+app.use(express.static(path.join(__dirname, '../client/build')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+});
+
+
+
+
 io.on('connection', (socket) => {
     io.emit('sessionCount', io.engine.clientsCount);
-
     socket.on('disconnect', () => {
         io.emit('sessionCount', io.engine.clientsCount)
     });
 });
 
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 server.listen(PORT, () => {
     console.log(`server launched on http://localhost:${PORT}`);
-});
-
-app.get('/', (req, res) => {
-  res.send('server works!');
-});
-
-app.use((req, res) => {
-  res.status(404).send('Сторінку не знайдено');
 });
