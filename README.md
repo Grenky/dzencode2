@@ -1,36 +1,70 @@
-# Проект Dzencode2
+Dzencode2
 
-Это проект с фронтендом и бекендом, разделёнными на две папки:
-
-- `/client` — React UI (пользовательский интерфейс)
-- `/server` — серверная часть (Express)
-
----
-
-## Структура проекта
-
-/client - React приложение
-/server - Сервер на Express
+dzencode2/
+├── client/ # Фронтенд на React
+│ └── build/ # Собранная версия React
+├── server/ # Бэкенд на Express
+│ └── index.js
+├── Dockerfile # Docker-конфигурация
+├── db-schema.mwb # Схема БД (MySQL Workbench)
+├── package-lock.json
+└── README.md
 
 ---
 
-## Как запустить проект локально
+Проект развернут на Render:
+https://dzencode2.onrender.com
 
-### 1. Клонировать репозиторий
+---
 
-```bash
+запустить локально
+
 git clone https://github.com/Grenky/dzencode2.git
 cd dzencode2
 
-cd client
-npm install
-npm start
+---
 
-cd server
-npm install
-npm start
+Собрать образ:
+docker build -t dzencode2-app .
+Запустить контейнер:
+docker run -p 3001:3001 dzencode2-app
 
 ---
 
-"client" на порте 3000
-"server" на порте 3001
+Ручной запуск (без Docker)
+
+Установка зависимостей:
+cd server
+npm install
+
+Запуск сервера:
+node index.js
+
+Сборка клиента:
+
+cd client
+npm install
+npm run build
+
+Express автоматически раздаёт папку client/build как статические файлы.
+
+---
+
+WebSocket
+REACT_APP_API_URL=https://dzencode2.onrender.com
+
+---
+
+Схема базы данных
+
+Таблица orders:
+
+id — INT, PK, Auto Increment
+
+title — VARCHAR
+
+price_usd — DECIMAL(10,2)
+
+created_at — DATETIME
+
+---
